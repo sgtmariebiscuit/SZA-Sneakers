@@ -1,8 +1,9 @@
-﻿namespace sza_API.Models
+﻿using Models.EntityFramework;
+
+namespace sza_API.Models
 {
-    public class OrderProducts
+    public class OrderProducts : BaseEntity
     {
-        public int Id { get; set; }
         public int OrderId { get; set; }
         public int SneakerId { get; set; }
     }

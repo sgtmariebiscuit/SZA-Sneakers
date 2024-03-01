@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Models.EntityFramework
 {
-    internal class BaseEntity
+    public class BaseEntity
     {
+        public string Id { get; set; }
         public DateTime DateCreated { get; set; } = DateTime.Now;
         public DateTime DateLastModified { get; set; } = DateTime.Now;
+        public bool Active { get; set; } = true;
     }
 }
