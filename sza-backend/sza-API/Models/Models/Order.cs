@@ -2,7 +2,7 @@
 
 namespace sza_API.Models
 {
-    public class Orders : BaseEntity
+    public class Order : BaseEntity
     {
         public int CustomerId { get; set; }
         public string OrderStatus { get; set; }
