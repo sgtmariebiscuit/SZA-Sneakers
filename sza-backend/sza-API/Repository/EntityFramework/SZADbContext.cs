@@ -19,6 +19,29 @@ namespace Repository.EntityFramework
             optionsBuilder.UseSqlServer(@"Data Source=.;Initial Catalog=SZADB;Integrated Security=True;Trust Server Certificate=True");
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Admin>()
+               .Property(e => e.Id)
+               .ValueGeneratedOnAdd();
+            modelBuilder.Entity<Customer>()
+               .Property(e => e.Id)
+               .ValueGeneratedOnAdd();
+            modelBuilder.Entity<OrderProducts>()
+               .Property(e => e.Id)
+               .ValueGeneratedOnAdd();
+            modelBuilder.Entity<Order>()
+                .Property(e => e.Id)
+               .ValueGeneratedOnAdd();
+            modelBuilder.Entity<Sneaker>()
+               .Property(e => e.Id)
+               .ValueGeneratedOnAdd();
+            modelBuilder.Entity<Supplier>()
+               .Property(e => e.Id)
+               .ValueGeneratedOnAdd();
+            // Other configurations...
+        }
+
         public DbSet<Admin> admin {  get; set; }
         public DbSet<Customer> customer { get; set; }
         public DbSet<OrderProducts> orderProduct { get; set; }
