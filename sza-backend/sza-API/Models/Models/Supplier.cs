@@ -1,8 +1,9 @@
-﻿namespace sza_API.Models
+﻿using Models.EntityFramework;
+
+namespace sza_API.Models
 {
-    public class Supplier
+    public class Supplier : BaseEntity
     {
-        public string Id { get; set; }
         public string Name { get; set; }
         public string Cellnumber { get; set; }
         public string Email { get; set; }
