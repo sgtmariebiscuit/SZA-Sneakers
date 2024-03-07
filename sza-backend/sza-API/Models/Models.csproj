@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\sza-API\sza-API.csproj" />
   </ItemGroup>
 
 </Project>
