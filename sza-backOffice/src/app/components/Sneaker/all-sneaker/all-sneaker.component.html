@@ -1,3 +1,76 @@
-<h2>Change the background</h2>
-<p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-<button class="btn btn-primary btn-md" type="button">Example button</button>
+<h2>Add Sneaker</h2>
+<p>Input required details to add a new sneaker to the website</p>
+
+<form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Sneaker Name</label>
+      <input type="text" class="form-control" id="sneakerName" placeholder="Sneaker name">
+    </div>
+    <div class="col-md-6">
+        <label for="inputState" class="form-label">Brand</label>
+        <select id="inputState" class="form-select">
+          <option selected>Sneaker Brand</option>
+          <option>Nike</option>
+          <option>Adidas</option>
+          <option>Other</option>
+        </select>
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Description</label>
+      <textarea type="text" class="form-control" rows="3" id="inputAddress" placeholder="Add description for the shoe"></textarea>  
+    </div>
+    <div class="col-4">
+      <label for="inputAddress2" class="form-label">Price</label>
+      <input type="Text" class="form-control" id="inputAddress2" placeholder="Price">
+    </div>
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">Condition</label>
+        <select id="inputState" class="form-select">
+          <option selected>Condition</option>
+          <option>Brand new</option>
+          <option>Good</option>
+          <option>Worn out</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">Shoe Size</label>
+        <select id="inputState" class="form-select">
+          <option selected>Size</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+
+        </select>
+    </div>
+    <div class="col-md-12">
+      <label for="inputCity" class="form-label">SKU</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="Enter SKU ID">
+    </div>
+  </form>
+  <br>
+  <br>
+  <h4>Supplier details</h4>
+  <form class="row g-3">
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Name</label>
+        <input type="email" class="form-control" id="sneakerName" placeholder="Name Surname">
+    </div>
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="sneakerName" placeholder="example@email.com">
+    </div>
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Cell Number</label>
+        <input type="email" class="form-control" id="sneakerName" placeholder="Cell Number">
+    </div>
+    <div class="col-md-6">
+        <button type="submit" class="btn btn-primary float-end" style="margin-top: 30px;">Submit</button>
+      </div>
+  </form>
